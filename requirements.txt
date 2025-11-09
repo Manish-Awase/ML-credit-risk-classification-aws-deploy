@@ -2,8 +2,10 @@ streamlit
 pandas
 numpy
 joblib
+scikit-learn==1.7.2
+xgboost==2.0.3
 requests
 pydantic
 fastapi[standard]
-
 uvicorn[standard]
+
