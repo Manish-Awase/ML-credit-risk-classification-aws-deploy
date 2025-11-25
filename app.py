@@ -4,12 +4,6 @@ import requests
 from predict import predict_score
 
 
-# --- Placeholder Score Calculation Function ---
-# In a real application, you would load your trained machine learning model
-# (e.g., using pickle, joblib, or torch) and use this function to preprocess
-# the user inputs and predict the score.
-
-
 
 # --- Streamlit App Configuration ---
 st.set_page_config(
@@ -201,3 +195,4 @@ if calculate_button:
 
             # with st.expander("Show Detailed Input Data"):
             #     st.dataframe(pd.DataFrame(input_features, index=["Value"]).T)
+
