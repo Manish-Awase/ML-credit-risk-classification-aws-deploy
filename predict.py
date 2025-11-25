@@ -10,44 +10,6 @@ scaler = model_data['scaler' ]
 features = model_data[ 'features' ]
 cols_to_scale = model_data['cols_to_scale']
 
-# print(type(cols_to_scale))
-# print(cols_to_scale)
-# print(features)
-# print('combine ////////////////////////////////////////////')
-# combine=set(list(cols_to_scale)+list(features))
-# print(type(combine))
-# print(combine)
-# print(len(combine))
-# print('///////////////////////')
-# input_features = {
-#         'age': 1,
-#         'income': 1,
-#         'loan_amount': 1,
-#         'loan_tenure_months': 1,
-#         'number_of_open_accounts':1,
-#         'credit_utilization_ratio': 1,
-#         'loan_to_income':1,
-#         'delinquency_ratio': 1,
-#         'avg_dpd_per_delinquency':1,
-#         'residence_type': 1,
-#         'loan_purpose':1,
-#         'loan_type': 1,}
-# print("remaining feature from ui's features")
-# removed=set(features)-set(input_features.keys())
-#
-# sorted_list = sorted(removed, key=len)
-#
-# print(sorted_list)
-# print(len(removed))
-# print("remaining feature from cols_to_scale features")
-# removed=set(cols_to_scale)-set(features)
-
-# sorted_list = sorted(removed, key=len)
-#
-# print(sorted_list)
-# print(len(removed))
-
-
 
 
 def prepare_df(in_features):
@@ -119,3 +81,4 @@ def predict_score(in_features):
     # find credit score level
     risk_level, color=toget_risk_level(score)
     return probability, score, risk_level, color
+
